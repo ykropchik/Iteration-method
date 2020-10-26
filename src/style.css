@@ -1,0 +1,81 @@
+html *{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    font-size: 32px;
+    padding: 12px;
+}
+
+.settings {
+    width: 100%;
+}
+
+.sett {
+    margin: 8px 0;
+}
+
+.sett *{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.sett input{
+    margin: 0 8px;
+    height: 32px;
+    width: 64px;
+    font-size: 18px;
+}
+
+#input-matrix, #result-matrix {
+    width: 100%;
+    margin-top: 16px;
+}
+
+#input-matrix *, #result-matrix * {
+    font-size: 18px;
+}
+
+.head-lables {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 8px 64px;
+} 
+
+.head-lables span {
+    width: 64px;
+}
+
+.left-lables {
+    display: inline-flex;
+    flex-direction: column;
+    width: 20px;
+    margin: 8px 8px;
+}
+
+.left-lables span {
+    height: 64px;
+    width: 32px;
+}
+
+#matrix, #out-matrix {
+    display: inline-grid;
+}
+
+#matrix input, #out-matrix span {
+    margin: auto 4px;
+    text-align: center;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="src/style.css" rel="stylesheet" type="text/css">
+    <script src="src/jquery-3.5.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>Метод Брауна-Робинсона (Инерационный метод)</header>
+    <div class="settings">
+        <div class="sett" id="A-sett">
+            <h2>Кол-во стратегий A:</h2>
+            <input type="number" min="2" max="6" value="3">
+        </div>
+
+        <div class="sett" id="B-sett">
+            <h2>Кол-во стратегий B:</h2>
+            <input type="number" min="2" max="6" value="3">
+        </div>
+
+        <div class="sett" id="It-sett">
+            <h2>Кол-во итераций:</h2>
+            <input type="number" min="2" max="6" value="3">
+        </div>
+    </div>
+
+    <div id="input-matrix">
+        <div id="b-lables" class="head-lables">
+            <span>B1</span>
+            <span>B2</span>
+            <span>B3</span>
+        </div>
+        <div id="a-lables" class="left-lables">
+            <span>A1</span>
+            <span>A2</span>
+            <span>A3</span>
+        </div>
+        <div id="matrix" style="grid-template-columns: repeat(3, 64px); grid-template-rows: repeat(3, 64px);">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+            <input type="number" max="20">
+        </div>
+    </div>
+    
+    <div id="result-matrix" style="display: none">
+        <div class="matrix-container">
+            <div id="top-lables" class="head-lables">
+                <span>B1</span>
+                <span>B2</span>
+                <span>B3</span>
+            </div>
+            <div id="num-lables" class="left-lables">
+                <span>A1</span>
+                <span>A2</span>
+                <span>A3</span>
+            </div>
+            <div id="out-matrix" style="grid-template-columns: repeat(3, 64px); grid-template-rows: repeat(3, 64px);">
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+                <span>213</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>
