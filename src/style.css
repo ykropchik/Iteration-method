@@ -79,3 +79,12 @@ header {
     margin: auto 4px;
     text-align: center;
 }
+
+#result {
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+#result span {
+    margin-right: 64px;
+}

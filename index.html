@@ -23,20 +23,22 @@
 
         <div class="sett" id="It-sett">
             <h2>Кол-во итераций:</h2>
-            <input type="number" min="2" max="6" value="3">
+            <input type="number" min="3" max="100" value="3">
         </div>
+
+        <button id="start-button" >Посчитать</button>
     </div>
 
     <div id="input-matrix">
         <div id="b-lables" class="head-lables">
+            <span>B0</span>
             <span>B1</span>
             <span>B2</span>
-            <span>B3</span>
         </div>
         <div id="a-lables" class="left-lables">
+            <span>A0</span>
             <span>A1</span>
             <span>A2</span>
-            <span>A3</span>
         </div>
         <div id="matrix" style="grid-template-columns: repeat(3, 64px); grid-template-rows: repeat(3, 64px);">
             <input type="number" max="20">
@@ -52,6 +54,9 @@
     </div>
     
     <div id="result-matrix" style="display: none">
+        <div id="result">
+        </div>
+        
         <div class="matrix-container">
             <div id="top-lables" class="head-lables">
                 <span>B1</span>
@@ -59,20 +64,12 @@
                 <span>B3</span>
             </div>
             <div id="num-lables" class="left-lables">
-                <span>A1</span>
-                <span>A2</span>
-                <span>A3</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
             </div>
             <div id="out-matrix" style="grid-template-columns: repeat(3, 64px); grid-template-rows: repeat(3, 64px);">
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
-                <span>213</span>
+
             </div>
         </div>
     </div>
